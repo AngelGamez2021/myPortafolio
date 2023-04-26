@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: url("../../../assets/diseños/fondo.jpg") #d8d797;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    .menu {
+        margin: 40px 0;
+        text-align: right;
+
+        a {
+            margin: 0 20px;
+            color: rgb(0, 0, 0);
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 9px;
+            font-size: 1em;
+        }
+        a:hover {
+            border-bottom: 2px solid #000;
+        }
+    }
+
+    .container-text {
+        display: flex;
+        justify-content: center;
+        margin: 150px 0;
+        .texto {
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            border-radius: 3px;
+            display: inline-block;
+            text-align: center;
+            padding: 20px 60px;
+            h1,
+            h2 {
+                font-weight: 300;
+                margin: 0;
+            }
+            .nombre {
+                margin-bottom: 10px;
+                font-size: 50px;
+                margin: 0;
+            }
+            .profesion {
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.presentacion {
+    width: 100%;
+    max-width: 1880px;
+    margin: auto;
+    padding: 85px;
+
+    .titulo {
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
+        color: #000000;
+        margin-bottom: 100px;
+    }
+    p {
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.menu-trabajos {
+    .barra {
+        width: 100%;
+        max-width: 1880px;
+        margin: auto;
+        text-align: center;
+        padding: 70px 0;
+        background: #9b9b9b;
+        a {
+            margin: 0 20px;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        a:hover {
+            color: #000;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    max-width: 1880px;
+    margin: auto;
+
+    .trabajos {
+        width: 100%;
+        max-width: 1880px;
+        .restaurante {
+            padding: 100px 0px 200px 0px;
+            text-align: center;
+            margin-bottom: 40px;
+            background: url("../../../assets/diseños/fondo-restaurante.jpg") #000;
+
+            .titulo {
+                font-weight: 300;
+                font-size: 34px;
+                line-height: 34px;
+                text-align: center;
+                // border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
+                color: #ffffff;
+                margin-bottom: 100px;
+            }
+            img {
+                width: 400px;
+                height: 500px;
+                margin: 0 20px;
+                transition: box-shadow 0.2s;
+                -webkit-transition: box-shadow 0.2s;
+                -moz-transition: box-shadow 0.2s;
+                -ms-transition: box-shadow 0.2s;
+                -o-transition: box-shadow 0.2s;
+}
+
+            img:hover {
+                box-shadow: 0px 0px 30px rgb(65, 65, 65);
+            }
+            
+        }
+
+        .colegio {
+            padding: 100px 0px 200px 0px;
+            text-align: center;
+            .titulo {
+                font-weight: 300;
+                font-size: 34px;
+                line-height: 34px;
+                text-align: center;
+                // border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
+                color: #000000;
+                margin-bottom: 100px;
+            }
+            img {
+                width: 400px;
+                height: 500px;
+                margin: 0 20px;
+            }
+        }
+    }
+}

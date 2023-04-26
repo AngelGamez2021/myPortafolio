@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; /* para quitar todo lo que sobra dentro del contenedor */
+}
+
+/* HEADER */
+
+header {
+    background: url("../../../assets/joven-disenador-grafico-trabajando-oficina.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+
+    .menu {
+        margin: 40px 0;
+        text-align: right;
+
+        a {
+            margin: 0 20px;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 9px;
+            font-size: 1em;
+        }
+        a:hover {
+            border-bottom: 2px solid #fff;
+        }
+    }
+
+    .container-text {
+        display: flex;
+        justify-content: center;
+        margin: 150px 0;
+
+        .texto {
+            border: 2px solid rgb(255, 255, 255, 0.1);
+            border-radius: 3px;
+            display: inline-block;
+            text-align: center;
+            padding: 20px 60px;
+            background: #383838;
+
+            h1,
+            h2 {
+                color: #ffffff;
+                font-weight: 300;
+                margin: 0;
+            }
+            .nombre {
+                margin-bottom: 10px;
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .proesion {
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+.presentacion {
+    width: 100%;
+    max-width: 1880px;
+    margin: auto;
+    .titulo {
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        padding: 55px 0;
+        border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
+        color: #383838;
+    }
+    p {
+        margin: auto;
+        padding: 40px 220px;
+        text-align: center;
+        color: #5a5a5a;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+    }
+}
+
+/* MAIN */
+
+.main {
+    text-align: center;
+    margin-top: 150px;
+    
+    .titulo {
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        margin-bottom: 0;
+        background: #ededed;
+        padding: 55px 220px;
+        border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
+        color: #383838;
+        overflow: visible; /* para quitar todo lo que sobra dentro del contenedor */
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 1880px;
+        background: #ededed;
+        padding: 0 220px;
+
+        .cuadro1 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center; /* los alinea, centra */
+
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto3.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto4.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .cuadro2 {
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto1.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto2.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+        }
+
+        .cuadro3 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center; /* los alinea, centra */
+
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto5.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto6.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .cuadro4 {
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto7.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto8.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+        }
+
+        .cuadro5 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center; /* los alinea, centra */
+
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto9.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto10.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .cuadro6 {
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto11.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto12.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+        }
+
+        .cuadro7 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center; /* los alinea, centra */
+
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto13.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto14.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+        .cuadro8 {
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            .caracteristicas {
+                display: inline-block;
+                text-align: center;
+            }
+            .foto {
+                padding: 20px;
+                background: url("../../../assets/Restauración/foto15.jpg");
+                border-radius: 50%;
+                width: 450px;
+                height: 450px;
+                background-repeat: no-repeat;
+                margin: 40px;
+                transition: background 4s;
+                cursor: pointer;
+
+            }
+            .foto:hover {
+                transition: background 4s;
+                background: url("../../../assets/Restauración/foto16.jpg");
+                background-repeat: no-repeat;
+                transition: background 4s;
+            }
+        }
+    }
+}
+
+/* FOOTER */
+
+footer {
+    .redes-sociales {
+        padding: 60px 0;
+        background: #383838;
+        .container {
+            display: flex; // para poder editar con justify-content: ;
+            justify-content: center;
+            a {
+                color: #fff;
+                text-align: center;
+                width: 100px;
+                display: block;
+                padding: 15px;
+                border-radius: 3px;
+                font-size: 30px;
+                margin: 0 20px;
+            }
+            .twiter:hover {
+                background: #1da1f2;
+            }
+            .facebook:hover {
+                background: #1877f2;
+            }
+            .instagram:hover {
+                background: #405de6;
+            }
+            .tiktok:hover{
+                background: #000;
+            }
+        }
+    }
+}
