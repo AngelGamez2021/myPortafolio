@@ -6,9 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { GraficsIndesignComponent } from './componentes/grafics-indesign/grafics-indesign.component';
 import { DesarrollosAngularComponent } from './componentes/desarrollos-angular/desarrollos-angular.component';
-import { FotografiaComponent } from './componentes/fotografia/fotografia.component';
+import { UiComponent } from './componentes/ui/ui.component';
 import { RestaurafotosComponent } from './componentes/restaurafotos/restaurafotos.component';
 import { RouterModule } from '@angular/router';
+import { FormularioComponent } from './componentes/desarrollos-angular/formulario/formulario.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     GraficsIndesignComponent,
     DesarrollosAngularComponent,
-    FotografiaComponent,
+    UiComponent,
     RestaurafotosComponent,
+    FormularioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

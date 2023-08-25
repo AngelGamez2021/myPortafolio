@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -41,7 +41,7 @@ header {
         }
     }
 
-    .container-text {
+    .contenedor-text {
         display: flex;
         justify-content: center;
         margin: 150px 0;
@@ -218,7 +218,7 @@ header {
 
 footer {
     .contacto {
-      .container {
+      .contenedor {
         padding: 60px 0;
   
         .titulo {

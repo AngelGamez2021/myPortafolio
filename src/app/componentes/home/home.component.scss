@@ -19,7 +19,7 @@ section[id] {
   scroll-padding-top: 70px;
 }
 
-.container {
+.contenedor {
   width: 90%;
   max-width: 1000px;
   margin: auto;
@@ -51,7 +51,7 @@ header {
     }
   }
 
-  .container-text {
+  .contenedor-text {
     display: flex;
     justify-content: center;
     /* align-content: center; */
@@ -90,7 +90,7 @@ header {
   .acerca-de {
     overflow: visible; /*  Para mostrar bien la foto, sobrante del contenedor.. */
 
-    .container {
+    .contenedor {
       text-align: center; /* esto tambien centra la imagen porque las imagenes son de tipo linea al igual que el texto */
       overflow: visible; /*  Para mostrar bien la foto, sobrante del contenedor.. */
 
@@ -130,13 +130,13 @@ header {
     background: #f2f2f2;
     padding: 60px 0;
 
-    .container {
+    .contenedor {
       overflow: hidden; /*para eliminar los sobraste del contenedor */
       .titulo {
         color: #323068;
         @extend .tittle;
       }
-      .container-trabajos {
+      .contenedor-trabajos {
         display: flex;
         flex-direction: row; /*esto los pone en file */
         flex-wrap: wrap; /*hace que ponga en la fila de abajo el siguiente si no cabe en la medida */
@@ -182,7 +182,7 @@ header {
 
 footer {
   .contacto {
-    .container {
+    .contenedor {
       padding: 60px 0;
 
       .titulo {
@@ -238,7 +238,7 @@ footer {
   .redes-sociales {
     background: #1e2b38;
     padding: 60px 0;
-    .container {
+    .contenedor {
       display: flex;
       justify-content: center;
 

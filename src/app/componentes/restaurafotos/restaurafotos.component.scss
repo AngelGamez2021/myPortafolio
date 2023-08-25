@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.contenedor {
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -35,7 +35,7 @@ header {
         }
     }
 
-    .container-text {
+    .contenedor-text {
         display: flex;
         justify-content: center;
         margin: 150px 0;
@@ -110,7 +110,7 @@ header {
         overflow: visible; /* para quitar todo lo que sobra dentro del contenedor */
     }
     
-    .container {
+    .contenedor {
         width: 100%;
         max-width: 1880px;
         background: #ededed;
@@ -371,7 +371,7 @@ footer {
     .redes-sociales {
         padding: 60px 0;
         background: #383838;
-        .container {
+        .contenedor {
             display: flex; // para poder editar con justify-content: ;
             justify-content: center;
             a {

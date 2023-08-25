@@ -1,0 +1,223 @@
+// para poner en practica @extend
+.tittle {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-padding-top: 70px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; /* para quitar todo lo que sobra dentro del contenedor */
+}
+
+/* HEADER */
+header {
+  background: url("../../../assets/Trabajos-Angular/fondo-web.jpg") #010208;
+  background-repeat: no-repeat; /* Para que no se repita */
+  background-position: center;
+  max-height: 600px;
+
+  .menu {
+    margin: 40px 0;
+    text-align: right;
+
+    a {
+      margin: 0 20px;
+      color: #fff;
+      display: inline-block; /* para poder editar pading en enlaces */
+      text-decoration: none;
+      border-bottom: 2px solid transparent; /* este lo ponemos porque al pasar el mouse con el hover, ya el tiene un espacio reservado pero transparente, si no estuviera, al pasar el mouse se añaden los dos pixeles en la pagina por el border bottom y se ve feo */
+      padding-bottom: 9px;
+      font-size: 1em;
+    }
+    a:hover {
+      border-bottom: 2px solid #fff;
+    }
+  }
+
+  .contenedor-text {
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    margin: 190px 0;
+
+    .texto {
+      border: 2px solid rgb(255, 255, 255, 0.5);
+      border-radius: 3px;
+      display: inline-block;
+      text-align: center;
+      padding: 20px 60px;
+
+      h1,
+      h2 {
+        color: #fff;
+        font-weight: 300;
+        margin: 0;
+      }
+      .nombre {
+        margin-bottom: 10px;
+        font-size: 50px;
+        line-height: 50px;
+      }
+
+      .profesion {
+        font-size: 25px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+/* MAIN */
+
+.main {
+  margin-top: 120px;
+  .acerca-de {
+    .titulo {
+      color: #1e2b38;
+      @extend .tittle;
+    }
+    text-align: center; /* esto tambien centra la imagen porque las imagenes son de tipo linea al igual que el texto */
+
+    .contenedor {
+      margin-bottom: 80px;
+      overflow: visible; /*  Para mostrar bien la foto, sobrante del contenedor.. */
+
+
+      .texto {
+        color: #5a5a5a;
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 30px;
+        width: 80%;
+        margin: 40px auto 60px auto;
+      }
+    }
+    .contenedor-proyectos {
+      padding: 80px 0 80px 0 ;
+      margin: 80px 0px 80px 0px;
+      background-color: #e9e9e9;
+     a{
+      color: rgb(49, 42, 254);
+     }
+     a:hover{
+      color: rgb(255, 255, 255);
+
+     }
+    }
+    }
+  }
+
+
+footer {
+  .contacto {
+    .contenedor {
+      padding: 60px 0;
+
+      .titulo {
+        color: #3895ea;
+        @extend .tittle;
+      }
+      .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          border: 2px solid #cecece;
+          border-radius: 5px;
+          padding: 15px 20px;
+          font-size: 20px;
+          color: #a4a4a4;
+        }
+        input[type="text"],
+        input[type="email"] {
+          width: 49%;
+          margin-bottom: 15px;
+        }
+        textarea {
+          width: 100%;
+          height: 100px;
+          min-width: 100%;
+          max-width: 100%;
+          min-height: 100px;
+          max-height: 200px;
+          margin-bottom: 15px;
+        }
+
+        .boton {
+          margin: auto; /*paracentrarelboton*/
+          background: #3895ea;
+          color: #fff;
+          border: none;
+          border-radius: 3px;
+          padding: 15px 40px;
+          cursor: pointer;
+          font-size: 18px;
+        }
+        .boton:hover {
+          background: #387bea;
+        }
+      }
+    }
+  }
+
+  .redes-sociales {
+    background: #1e2b38;
+    padding: 60px 0;
+    .container {
+      display: flex;
+      justify-content: center;
+
+      a {
+        color: #fff;
+        text-align: center;
+        width: 100px;
+        display: block;
+        padding: 15px;
+        border-radius: 3px;
+        font-size: 30px;
+        margin: 0 20px;
+      }
+
+      .twitter:hover {
+        background: #1da1f2;
+      }
+
+      .facebook:hover {
+        background: #1877f2;
+      }
+
+      .youtube:hover {
+        background: #ff0000;
+        /* color: #282828; */
+      }
+
+      .github:hover {
+        background: #333;
+      }
+
+      .instagram:hover {
+        background: #405de6;
+      }
+    }
+  }
+}
