@@ -1,0 +1,36 @@
+<div class="body">
+  <div class="login">
+   
+    <!-- el loading está incializado como falso por eso no se muestra, solo cuando sea true -->
+    <mat-spinner *ngIf="loanding" class="spinner" diameter="50"></mat-spinner>
+    
+    <!-- acá loading es verdadero y cuando sea falso, se ocultará el form -->
+    <form *ngIf="!loanding" [formGroup]="form" (ngSubmit)="ingresar()">
+      <img src="../../../../../assets/crud/cuenta.png" width="50%" />
+      <h1>login</h1>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Usuario</mat-label>
+        <input matInput autocomplete="off" formControlName="usuario" />
+      </mat-form-field>
+      <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Contraseña</mat-label>
+        <input
+          type="password"
+          matInput
+          autocomplete="off"
+          formControlName="password"
+        />
+      </mat-form-field>
+
+      <button
+        [disabled]="form.invalid"
+        type="submit"
+        class="ancho boton"
+        mat-raised-button
+        color="primary"
+      >
+        Ingresar
+      </button>
+    </form>
+  </div>
+</div>

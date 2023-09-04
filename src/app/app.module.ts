@@ -11,6 +11,37 @@ import { RestaurafotosComponent } from './componentes/restaurafotos/restaurafoto
 import { RouterModule } from '@angular/router';
 import { FormularioComponent } from './componentes/desarrollos-angular/formulario/formulario.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PresupuestoComponent } from './componentes/desarrollos-angular/presupuesto/presupuesto.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToolbarComponent } from './componentes/desarrollos-angular/table/toolbar/toolbar.component';
+import { TableComponent } from './componentes/desarrollos-angular/table/table.component';
+
+
+// ANGULAR MATERIAL
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import {MatSortModule} from '@angular/material/sort';
+import {MatDialogModule} from '@angular/material/dialog';
+import { EmpleadosComponent } from './componentes/desarrollos-angular/table/empleados/empleados.component';
+import { CrudComponent } from './componentes/desarrollos-angular/crud/crud.component';
+import { LoginComponent } from './componentes/desarrollos-angular/crud/login/login.component';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { DashboardComponent } from './componentes/desarrollos-angular/crud/dashboard/dashboard.component';
+import { InicioComponent } from './componentes/desarrollos-angular/crud/dashboard/inicio/inicio.component';
+import { ReporteComponent } from './componentes/desarrollos-angular/crud/dashboard/reporte/reporte.component';
+import { NavbarComponent } from './componentes/desarrollos-angular/crud/dashboard/navbar/navbar.component';
+import { UsuariosComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/usuarios.component';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -21,12 +52,37 @@ import { ReactiveFormsModule } from '@angular/forms';
     UiComponent,
     RestaurafotosComponent,
     FormularioComponent,
+    PresupuestoComponent,
+    TableComponent,
+    ToolbarComponent,
+    EmpleadosComponent,
+    CrudComponent,
+    LoginComponent,
+    DashboardComponent,
+    InicioComponent,
+    ReporteComponent,
+    NavbarComponent,
+    UsuariosComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule,
+    MatDialogModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
+
+    
     
   ],
   providers: [],
