@@ -37,6 +37,10 @@ import { InicioComponent } from './componentes/desarrollos-angular/crud/dashboar
 import { ReporteComponent } from './componentes/desarrollos-angular/crud/dashboard/reporte/reporte.component';
 import { NavbarComponent } from './componentes/desarrollos-angular/crud/dashboard/navbar/navbar.component';
 import { UsuariosComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/usuarios.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
+
 
 
 
@@ -80,7 +84,9 @@ import { UsuariosComponent } from './componentes/desarrollos-angular/crud/dashbo
     MatDialogModule,
     MatButtonModule,
     MatSnackBarModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    HttpClientModule,
+    MatTooltipModule
 
     
     
