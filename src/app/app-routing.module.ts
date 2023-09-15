@@ -13,6 +13,7 @@ import { DashboardComponent } from './componentes/desarrollos-angular/crud/dashb
 import { InicioComponent } from './componentes/desarrollos-angular/crud/dashboard/inicio/inicio.component';
 import { UsuariosComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/usuarios.component';
 import { ReporteComponent } from './componentes/desarrollos-angular/crud/dashboard/reporte/reporte.component';
+import { CrearUsuarioComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/crear-usuario/crear-usuario.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'dashboard', component: DashboardComponent, children:[
     {path:'', component: InicioComponent},
     {path:'usuarios', component: UsuariosComponent},
+    {path:'crear-usuario', component: CrearUsuarioComponent},
     {path:'reportes', component: ReporteComponent}
   ]},
 

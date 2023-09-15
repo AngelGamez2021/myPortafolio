@@ -39,6 +39,8 @@ import { NavbarComponent } from './componentes/desarrollos-angular/crud/dashboar
 import { UsuariosComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/usuarios.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { CrearUsuarioComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/crear-usuario/crear-usuario.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -67,6 +69,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ReporteComponent,
     NavbarComponent,
     UsuariosComponent,
+    CrearUsuarioComponent,
   ],
   imports: [
     BrowserModule,
@@ -86,7 +89,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     HttpClientModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatCardModule
 
     
     
