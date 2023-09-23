@@ -72,7 +72,8 @@ export class UsuariosComponent implements OnInit {
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(CrearUsuarioComponent, {
-      
+      height: '60%',
+      width: '60%'    
     });
   }
 

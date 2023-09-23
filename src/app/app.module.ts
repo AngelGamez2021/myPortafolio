@@ -41,6 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CrearUsuarioComponent } from './componentes/desarrollos-angular/crud/dashboard/usuarios/crear-usuario/crear-usuario.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
+
 
 
 
@@ -90,7 +93,9 @@ import {MatCardModule} from '@angular/material/card';
     MatProgressSpinnerModule,
     HttpClientModule,
     MatTooltipModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatSelectModule
 
     
     

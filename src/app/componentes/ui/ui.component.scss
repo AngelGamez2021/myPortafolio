@@ -44,22 +44,27 @@ header {
   .contenedor-text {
     display: flex;
     justify-content: center;
-    margin: 190px 0;
+    margin: 150px 0;
+
     .texto {
-      border: 1px solid rgb(0, 0, 0, 0.3);
+      border: 2px solid rgb(255, 255, 255, 0.1);
       border-radius: 3px;
       display: inline-block;
       text-align: center;
       padding: 20px 60px;
+      background: #383838;
+
       h1,
       h2 {
+        color: #ffffff;
         font-weight: 300;
         margin: 0;
       }
       .nombre {
         margin-bottom: 10px;
         font-size: 50px;
-        margin: 0;
+        line-height: 50px;
+
       }
       .profesion {
         font-size: 25px;

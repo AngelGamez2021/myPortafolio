@@ -59,7 +59,8 @@ header {
             .nombre {
                 margin-bottom: 10px;
                 font-size: 50px;
-                margin: 0;
+                                line-height: 50px;
+
             }
             .profesion {
                 font-size: 25px;
@@ -92,7 +93,7 @@ header {
 
 .menu-trabajos {
     position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: static;
     top: 0;
     .barra {
         width: 100%;
