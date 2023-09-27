@@ -64,7 +64,6 @@ header {
         margin-bottom: 10px;
         font-size: 50px;
         line-height: 50px;
-
       }
       .profesion {
         font-size: 25px;
@@ -78,7 +77,7 @@ header {
   width: 100%;
   max-width: 1880px;
   margin: auto;
-  padding: 85px 200px 85px 200px;
+  padding: 85px 100px 85px 100px;
 
   .titulo {
     font-weight: 300;
@@ -116,10 +115,14 @@ header {
         color: #ffffff;
         margin-bottom: 50px;
       }
-      .contenido{
-        h5{
+      .contenido {
+        video {
+          max-width:840px;
+          max-height: 680px;
+        }
+        h5 {
           margin-top: 20px;
-          a{
+          a {
             color: #ffffff;
             text-decoration: none;
             border-bottom: 2px solid transparent;
@@ -142,13 +145,17 @@ header {
         line-height: 34px;
         text-align: center;
         // border-bottom: 0.2px solid rgba(49, 49, 49, 0.1);
-        color: #ffffff;
+        color: #000000;
         margin-bottom: 50px;
       }
-      .contenido{
-        h5{
+      .contenido {
+        video {
+          max-width:840px;
+          max-height: 680px;
+        }
+        h5 {
           margin-top: 20px;
-          a{
+          a {
             color: #000000;
             text-decoration: none;
             border-bottom: 2px solid transparent;
@@ -165,60 +172,6 @@ header {
 /* FOOTER */
 
 footer {
-  .contacto {
-    .contenedor {
-      padding: 60px 0;
-
-      .titulo {
-        color: #3895ea;
-        @extend .tittle;
-      }
-      .formulario {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-          border: 2px solid #cecece;
-          border-radius: 5px;
-          padding: 15px 20px;
-          font-size: 20px;
-          color: #a4a4a4;
-        }
-        input[type="text"],
-        input[type="email"] {
-          width: 49%;
-          margin-bottom: 15px;
-        }
-        textarea {
-          width: 100%;
-          height: 100px;
-          min-width: 100%;
-          max-width: 100%;
-          min-height: 100px;
-          max-height: 200px;
-          margin-bottom: 15px;
-        }
-
-        .boton {
-          margin: auto; /*paracentrarelboton*/
-          background: #3895ea;
-          color: #fff;
-          border: none;
-          border-radius: 3px;
-          padding: 15px 40px;
-          cursor: pointer;
-          font-size: 18px;
-        }
-        .boton:hover {
-          background: #387bea;
-        }
-      }
-    }
-  }
-
   .redes-sociales {
     background: #1e2b38;
     padding: 60px 0;
@@ -261,30 +214,40 @@ footer {
   }
 }
 
-//   @media screen and (max-width: 800px) {
-//     header .container .menu {
-//       text-align: center;
-//     }
+@media screen and (max-width: 800px) {
+  header .contenedor .menu {
+    text-align: center;
+  }
 
-//     .main .trabajos .container .container-trabajos .trabajo {
-//       width: 46%;
-//     }
-//   }
+  .main .trabajos .contenido video {
+   
+      width: 80%;
+      height: 80%;
+  
+  }
+  .main .trabajos .contenido h5 {
+    overflow: hidden;
+   margin: auto;
+    font-size: 15px;
+    width: 46%;
+  }
+}
 
-//   @media screen and (max-width: 500px) {
-//     header .container .container-text .texto .nombre {
-//       font-size: 35px;
-//     }
-//     header .container .container-text .texto .profesion {
-//       font-size: 18px;
-//     }
+@media screen and (max-width: 500px) {
 
-//     .main .trabajos .container .container-trabajos .trabajo {
-//       width: 100%;
-//     }
+  header .contenedor-text .texto .nombre {
+    font-size: 35px;
+  }
+  header .contenedor-text .texto .profesion {
+    font-size: 18px;
+  }
+  .main .trabajos .contenido video {
+    width: 80%;
+    height: 80%;
+  }
 
-//     footer .redes-sociales .container {
-//       flex-wrap: wrap;
-//       padding: 20px 0;
-//     }
-//   }
+  footer .redes-sociales .contenedor {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+}
