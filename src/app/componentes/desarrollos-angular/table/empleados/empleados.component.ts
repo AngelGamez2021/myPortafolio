@@ -16,7 +16,7 @@ import { Person } from 'src/app/models/people.interface';
 export class EmpleadosComponent implements AfterViewInit {
 
 
-  displayedColumns: string[] = ['id', 'name', 'category', 'company', 'levelOfHappiness'];
+  displayedColumns: string[] = ['codigo', 'nombre', 'descripcion', 'marca', 'precio'];
   dataSource: MatTableDataSource<Person>;
   people = People;
 
